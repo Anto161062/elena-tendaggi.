@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ongarato
-Tendaggi - Ongarato Elena</title>
+    <title>Ongarato Tendaggi - Ongarato Elena</title>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -85,8 +84,12 @@ Tendaggi - Ongarato Elena</title>
         p {
             font-size: 18px;
         }
-        body {
-            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 100"><text x="50" y="40" font-size="75" fill="%230056b3">Ongarato</text><text x="80" y="90" font-size="75" fill="%230056b3">Tendaggi</text></svg>' fill="%230056b3">Ongarato Tendaggi</text></svg>'), auto;
+        .qr-code {
+            width: 150px;
+            margin-top: 20px;
+        }
+        .map-container {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -111,9 +114,11 @@ Tendaggi - Ongarato Elena</title>
         <div class="section">
             <h2>Catalogo Digitale</h2>
             <p>Apri il nostro catalogo completo per esplorare le nostre soluzioni su misura.</p>
-            <a href="Cataloghi%20su%20misura.pdf" target="_blank">
+            <a href="catalogo%20Elena%20Ongarato%20Tendaggi.pdf" target="_blank">
                 <button>Apri il Catalogo</button>
             </a>
+            <br>
+            <img src="qr-code%20(4).png" alt="QR Code Catalogo" class="qr-code">
         </div>
         <div class="section" id="contact">
             <h2>Contattaci</h2>
@@ -124,6 +129,19 @@ Tendaggi - Ongarato Elena</title>
             <div class="button-container">
                 <button onclick="window.location.href='https://wa.me/393346578246'">WhatsApp</button>
                 <button onclick="window.location.href='https://www.instagram.com/_ongaratotendaggi_/'">Instagram</button>
+            </div>
+            <br>
+            <img src="qr-code%20(4).png" alt="QR Code Contatti" class="qr-code">
+            <div class="map-container">
+                <iframe
+                    width="300"
+                    height="200"
+                    frameborder="0"
+                    style="border:0"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Via+Desman,+214,+35010+Borgoricco+PD"
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
     </div>
