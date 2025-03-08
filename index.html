@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ongarato Tendaggi - Ongarato Elena</title>
+    <title>Ongarato Tendaggi - Biglietto da Visita Digitale</title>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -38,6 +38,7 @@
             justify-content: center;
             gap: 20px;
             margin-top: 20px;
+            flex-wrap: wrap;
         }
         button {
             background-color: #0056b3;
@@ -56,17 +57,30 @@
             transform: scale(1.05);
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
         }
-        footer {
-            margin-top: 40px;
-            padding: 20px;
-            background: #0056b3;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
+        .catalog-image {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        .catalog-image:hover {
+            transform: scale(1.1);
+        }
+        h2 {
+            color: #0056b3;
+            font-size: 26px;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 18px;
         }
         .qr-code {
             width: 150px;
+            margin-top: 20px;
+        }
+        .map-container {
             margin-top: 20px;
         }
     </style>
@@ -77,13 +91,26 @@
     </header>
     <div class="container">
         <div class="section">
+            <h2>Benvenuti in Ongarato Tendaggi</h2>
+            <p>Da anni ci occupiamo di tendaggi su misura, offrendo soluzioni eleganti e funzionali per ogni ambiente.<br>La nostra passione per i dettagli e l'artigianalità ci ha reso un punto di riferimento nel settore.</p>
+        </div>
+        <div class="section">
+            <h2>Scopri i nostri Tendaggi su Misura</h2>
+            <p>Eleganza, qualità artigianale e design personalizzato per ogni esigenza.</p>
+            <img src="unnamed%20(1).png" alt="Tende a pacchetto" class="catalog-image">
+            <img src="unnamed%20(2).png" alt="Finta onda" class="catalog-image">
+            <div class="button-container">
+                <button onclick="window.location.href='https://mail.google.com/mail/?view=cm&fs=1&to=info@tappezzeriaongarato'">Richiedi un Preventivo</button>
+            </div>
+        </div>
+        <div class="section">
             <h2>Catalogo Digitale</h2>
             <p>Apri il nostro catalogo completo per esplorare le nostre soluzioni su misura.</p>
             <a href="catalogo%20Elena%20Ongarato%20Tendaggi.pdf" target="_blank">
                 <button>Apri il Catalogo</button>
             </a>
             <br>
-            <img src="qrcode%20catalogo.png" alt="QR Code Catalogo" class="qr-code">
+            <img src="qrcode_catalogo.png" alt="QR Code Catalogo" class="qr-code">
         </div>
         <div class="section" id="contact">
             <h2>Contattaci</h2>
@@ -94,10 +121,23 @@
             <div class="button-container">
                 <button onclick="window.location.href='https://wa.me/393346578246'">WhatsApp</button>
                 <button onclick="window.location.href='https://www.instagram.com/_ongaratotendaggi_/'">Instagram</button>
-                <button onclick="window.location.href='Ongarato_Tendaggi.vcf'">Salva il Contatto</button>
+                <a href="Ongarato_Tendaggi.vcf" download>
+                    <button>Salva Contatto</button>
+                </a>
             </div>
             <br>
             <img src="qr-code%20(4).png" alt="QR Code Contatti" class="qr-code">
+            <div class="map-container">
+                <iframe
+                    width="300"
+                    height="200"
+                    frameborder="0"
+                    style="border:0"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Via+Desman,+214,+35010+Borgoricco+PD"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </div>
     <footer>
