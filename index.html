@@ -11,10 +11,9 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: url('tende-sfondo.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background: linear-gradient(to bottom, #f4f1ee, #eae5e1); /* Tonalità calde e neutre */
             text-align: center;
-            color: #5A5A5A; /* Colore elegante del catalogo */
+            color: #5A5A5A; /* Testo elegante e raffinato */
         }
         .container {
             width: 90%;
@@ -32,11 +31,13 @@
             border-radius: 10px 10px 0 0;
         }
         .section {
-            background: rgba(255, 255, 255, 0.9);
+            background: url('tende-sfondo.jpg') no-repeat center center;
+            background-size: cover;
             margin: 20px 0;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px); /* Effetto leggero per armonizzare con il testo */
         }
         .button-container {
             display: flex;
